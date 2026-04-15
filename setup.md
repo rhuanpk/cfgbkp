@@ -46,6 +46,7 @@ Interface:
 Rede:
 - `ssh`: Utilitário de conexão remota
 - `network-manager`: Gerenciador de rede
+- `network-manager-tui`: Pacotes TUI do `network-manager`
 
 Segurança:
 - `gpg`: Utilitário de chaves GnuPG
