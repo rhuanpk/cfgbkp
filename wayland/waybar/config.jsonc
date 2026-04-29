@@ -7,7 +7,8 @@
 		"sway/scratchpad"
 	],
 	"modules-center": [
-		"clock"
+		"clock",
+		"idle_inhibitor"
 	],
 	"modules-right": [
 		"network",
@@ -23,7 +24,6 @@
 		"custom/sepquote",
 		"battery",
 		"tray",
-		//"idle_inhibitor",
 		"custom/noti",
 		"custom/power"
 	],
@@ -74,6 +74,15 @@
 			"on-scroll-down": "shift_down"
 		},
 		"interval": 1
+	},
+	"idle_inhibitor": {
+		"format": "{icon} ",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		},
+		"tooltip-format-activated": "Coffeine",
+		"tooltip-format-deactivated": "NoCoffeine"
 	},
 	"network": {
 		"format-wifi": "<span color='#10e3e3'></span> {essid}",
@@ -150,15 +159,6 @@
 	"tray": {
 		"spacing": 4,
 		"show-passive-items": true
-	},
-	"idle_inhibitor": {
-		"format": "{icon}",
-		"format-icons": {
-			"activated": "",
-			"deactivated": ""
-		},
-		"tooltip-format-activated": "Presentation: Activated",
-		"tooltip-format-deactivated": "Presentation: Dectivated"
 	},
 	"custom/noti": {
 		"tooltip": true,
