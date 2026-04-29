@@ -21,13 +21,21 @@ Instalar um Debian mínimo (com no máximo os utilitários padrões) e particion
 
 ### APT
 
-Configurar o `apt` para usar o repositórios do _testing_:
+Configurar `apt` para usar o repositórios do _testing_:
 1. Remova os repositórios de código-fonte
 1. Remova os `*-backports`
 1. Remova os `*-updates`
 1. Troque todos os "`stable`" por "`testing`"
 1. Adicione as _branchs_ `contrib` e `non-free`
 1. Atualize o sistema completamente
+
+### Flatpak
+
+Configurar `flatpak` no sistema:
+1. `sudo apt install flatpak`
+1. `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
+1. `flatpak install flathub io.github.flattool.Warehouse`
+1. `flatpak install flathub com.github.tchx84.Flatseal`
 
 ### Pacotes
 
@@ -149,6 +157,12 @@ List Wayland Toplevels:
 1. `make -j$(nproc)`
 1. `[sudo] make install`
 
+Wayfreeze:
+1. `[sudo] apt install rustc cargo libxkbcommon-dev`
+1. `git clone https://github.com/Jappie3/wayfreeze.git`
+1. `cd ./wayfreeze/`
+1. `cargo install --path ./ --root ~/.local/` ou `cargo build --release` (_build only_)
+
 LibreOffice:
 1. `[sudo] apt install libreoffice libreoffice-{gtk4|qt6} [hunspell-<lang>] [default-jre]`
 
@@ -237,6 +251,17 @@ Pipewire:
 1. `systemctl reboot || [sudo] reboot`
 1. Copiar arquivo de configuração para `~/.config/pipewire/pipewire.conf.d/`
 
+Gradia:
+1. `flatpak install flathub be.alexandervanhee.gradia`
+1. Definir configurações via Flatseal:
+    1. Adicionar na "Session Bus" para "Talks":
+        - `org.freedesktop.portal.Desktop`
+        - `org.freedesktop.portal.Settings`
+        - `org.freedesktop.portal.Inhibit`
+        - `org.freedesktop.portal.Screenshot`
+    1. Adicionar na "Filesystem" para "Other files":
+        - `xdg-pictures`
+
 Tema:
 1. Definir tema para GTK:
     ```sh
@@ -276,6 +301,7 @@ Variáveis:
         ELECTRON_OZONE_PLATFORM_HINT=auto
     eof
     ```
+
 TMP:
 1. Copiar arquivo de configuração para `/etc/tmpfiles.d/` (_default_ `/usr/lib/tmpfiles.d/tmp.conf`)
 
