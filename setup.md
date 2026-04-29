@@ -96,7 +96,7 @@ Compatibilidade:
 Protocolos:
 - `wayland-protocols`: Protocolos do servidor gráfico
 - `xdg-desktop-portal-wlr`: Protocolos para Wayland
-- `xdg-desktop-portal-gtk`: Protocolos genéricos (_?_)
+- `xdg-desktop-portal-gtk`: Protocolos para GTK
 
 Drivers:
 - `mesa-utils`: Ferramentas CLI de vídeo
