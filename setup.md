@@ -237,6 +237,13 @@ Network-manager:
 - Remover o arquivo `/etc/network/interfaces`
 - Desabilitar o daemon `networking.service`
 - Reiniciar o daemon `NetworkManager.service`
+- Desabilitar o _powersave_:
+    ```sh
+    cat <<- eof | [sudo] tee '/etc/NetworkManager/conf.d/wifi-powersave.conf'
+        [connection]
+        wifi.powersave = 2
+    eof
+    ```
 
 UFW:
 - Executar `[sudo] ufw enable`
@@ -289,7 +296,7 @@ Tema:
 Variáveis:
 1. Definir variáveis de ambiente:
     ```sh
-    cat <<- eof | tee -a /etc/environment
+    cat <<- eof | [sudo] tee -a /etc/environment
         EDITOR=vim
         XDG_SESSION_TYPE=wayland
         XDG_CURRENT_DESKTOP=sway
