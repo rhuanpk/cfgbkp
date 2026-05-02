@@ -132,8 +132,8 @@ bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 #bindsym Print exec slurp -d | grim -g - - | tee "$HOME/Pictures/$(date '+%y%m%d_%H%M%S_print.png')" | wl-copy
 #bindsym Print+Shift exec slurp -d | grim -g - - | swappy -f -
-bindsym Print exec wayfreeze --after-freeze-cmd "slurp -d | grim -g - - | tee '$HOME/Pictures/$(date '+%y%m%d_%H%M%S_print.png')' | wl-copy; killall wayfreeze"
-bindsym Print+Shift exec wayfreeze --after-freeze-cmd "slurp -d | grim -g - /tmp/screenshot.png; killall wayfreeze; swappy -f /tmp/screenshot.png"
+bindsym Print exec wayfreeze --hide-cursor --after-freeze-cmd "slurp -d | grim -g - - | tee '$HOME/Pictures/$(date '+%y%m%d_%H%M%S_print.png')' | wl-copy; killall wayfreeze"
+bindsym Print+Shift exec wayfreeze --hide-cursor --after-freeze-cmd "slurp -d | grim -g - /tmp/screenshot.png; killall wayfreeze; swappy -f /tmp/screenshot.png"
 
 bar {
     swaybar_command waybar
