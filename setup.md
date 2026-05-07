@@ -225,6 +225,13 @@ VSCode:
     1. Caso funcione, basta copiar arquivo de _keybindings_ (pré-existent) para `~/.config/Code/User/`
 - Caso não seja reconhecido automáticamente o chaveiro, inclua `"password-store": "gnome-libsecret"` em `~/.vscode/argv.json`
 
+IntelliJ:
+- Caso haja "bugs" na UI
+    - Problemas ao redimensionar janelas
+        1. _Help_
+        1. _Edit Custom VM Options..._
+        1. `-Dawt.toolkit.name=WLToolkit`
+
 Google-chrome:
 - Utilize o `cog` como intermediário somente para fazer o _download_ do Chrome
 - Caso precise, configure os _emojis_:
