@@ -28,7 +28,7 @@ alias ggsy='git switch main || git switch master && git fetch --tags upstream HE
 alias ggg="git-pretty 'git log --all --oneline --graph' $@"
 alias ggl="git-pretty 'git log --all --oneline --patch' $@"
 alias ggls="git-pretty 'git log --all --oneline' $@"
-alias gglt="git-pretty 'git log --oneline origin/HEAD..HEAD' $@"
+alias gglt="git-pretty 'git log --oneline origin/\${GIT_BRANCH:-HEAD}..HEAD' $@"
 
 # Generals
 alias tmp='[ ! -d /tmp/tmp/ ] && mkdir -pv /tmp/tmp/; cd /tmp/tmp/'
