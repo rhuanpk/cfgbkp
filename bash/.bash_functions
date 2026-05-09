@@ -31,6 +31,10 @@ diffstr() {
 #}
 
 utilities() {
+	[ -z "$PATH_NOTES" ] && {
+		echo "$0: \$PATH_NOTES not set" >&2
+		return 1
+	}
 	local path="$(
 		find "$PATH_NOTES" -type f -name '*.md' \
 		| fzf --tac --height='~100%' --delimiter '/' --with-nth='-1'
