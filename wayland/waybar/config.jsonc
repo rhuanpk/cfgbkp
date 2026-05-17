@@ -7,8 +7,7 @@
 		"sway/scratchpad"
 	],
 	"modules-center": [
-		"clock",
-		"idle_inhibitor"
+		"clock"
 	],
 	"modules-right": [
 		"network",
@@ -24,6 +23,8 @@
 		"custom/sepquote",
 		"battery",
 		"tray",
+		"idle_inhibitor",
+		"power-profiles-daemon",
 		"custom/noti",
 		"custom/power"
 	],
@@ -83,6 +84,14 @@
 		},
 		"tooltip-format-activated": "Coffeine",
 		"tooltip-format-deactivated": "NoCoffeine"
+	},
+	"power-profiles-daemon": {
+		"tooltip-format": "Profile: {profile}\nDriver: {driver}",
+		"format-icons": {
+			"performance": "",
+			"balanced": "󱦒",
+			"power-saver": " "
+		}
 	},
 	"network": {
 		"format-wifi": "<span color='#10e3e3'></span> {essid}",

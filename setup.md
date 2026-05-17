@@ -147,6 +147,7 @@ Sistema:
 - `preload`: Otimizador de _startup time_ de programas (_?_)
 - `fwupd`: Gerenciador de atualizações de `firmware`
 - `libwayland-dev`: Utilitários do Wayland
+- `power-profiles-daemon`: Perfis de modo de força
 
 #### Complexos
 
