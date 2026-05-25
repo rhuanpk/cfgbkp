@@ -44,7 +44,11 @@ tooltip {
 	padding-right: 2px;
 }
 
-#idle_inhibitor {
+#idle_inhibitor.activated {
+	color: unset;
+}
+
+#idle_inhibitor.deactivated {
 	color: #777777;
 }
 
