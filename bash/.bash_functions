@@ -93,7 +93,7 @@ mychecking() {
 }
 
 hlct() {
-	local tmp="$(mktemp /tmp/hlct_XXXXXXX.any)"
+	local tmp="$(mktemp /tmp/hlct_XXXXXXX)"
 	if [ "$#" -eq 1 ]; then
 		if [ -t 0 ]; then
 			local stmt="'$(realpath "$1")'"
@@ -114,9 +114,7 @@ hlct() {
 		echo "$0: fatal: need one or two args"
 		exit 1
 	fi
-	cd /tmp/
 	eval highlight -O ansi $stmt
-	cd - >/dev/null
 }
 
 twcm() {
