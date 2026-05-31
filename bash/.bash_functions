@@ -40,9 +40,7 @@ utilities() {
 		| fzf --tac --height='~100%' --delimiter '/' --with-nth='-1'
 	)"
 	[ -z "$path" ] && return 1
-	cd /tmp/
 	highlight -O ansi "$path" | less -R
-	cd -
 }
 
 #get-bindings() {
