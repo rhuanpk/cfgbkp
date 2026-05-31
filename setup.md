@@ -88,6 +88,7 @@ Tema:
 - `qt5ct`: Utilitário do Qt5
 - `qt6ct`: Utilitário do Qt6
 - `libglib2.0-bin`: Utilitário `gsettings`
+- `highlight`: _Syntax hilighter_ CLI
 
 Compatibilidade:
 - `xwayland`: Suporte para programas Xorg no Wayland (_?_)
