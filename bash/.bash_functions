@@ -182,7 +182,7 @@ system-infos() {
 }
 
 mkfl() {
-	> ./file-{1..4}.{txt,tmp}
+	touch ./file-{1..4}.{txt,tmp}
 	for folder in ./dir-{1..2}/sub-{a..c}/; do
 		mkdir -p "$folder"
 		touch "$folder"/file-{1..2}.off
