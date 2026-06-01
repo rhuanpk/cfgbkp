@@ -38,8 +38,8 @@ alias cb="wl-copy -n"
 alias cbf='wl-copy'
 
 # Tools
-alias rmll='shopt -s extglob; rm -rfv ./{.[^.]*,*}'
 alias pwgn='pwgen -scny 24 1'
+alias rmll='rm -rv .[^.]* *'
 alias rms='shred -zuvn 10'
 alias hsgp="history | sed -E 's/[[:blank:]]+[[:digit:]]+[[:blank:]]+//' | grep -iE"
 
