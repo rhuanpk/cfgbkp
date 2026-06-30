@@ -12,7 +12,7 @@ alias lla='ls -lhAF --time-style=+%%'
 alias llt='ls -lhtF'
 
 # Git
-alias ggd='cat <(git diff --color=always)'
+alias ggd='git --no-pager diff'
 alias ggs='git status'
 alias ggr='git restore ./; git clean -f ./'
 
