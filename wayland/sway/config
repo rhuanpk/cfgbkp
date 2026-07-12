@@ -6,7 +6,7 @@ set $down j
 set $up k
 set $right l
 
-set $term terminator --working-directory /tmp/tmp
+set $term kitty -d /tmp
 set $menu wmenu-run
 
 set $cursorCmd gsettings set org.gnome.desktop.interface

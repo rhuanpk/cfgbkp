@@ -63,7 +63,7 @@ Segurança:
 - `seahorse`: Chaveiro GUI (_?_)
 
 Trabalho:
-- `terminator`: Emulador de terminal (_also kitty_)
+- `kitty`: Emulador de terminal (_also terminator_)
 - `google-chrome`: Pacote _.deb_
 - `thunar`: Gerenciador de arquivos
 - `zathura`: Visualizador de PDFs
@@ -197,7 +197,7 @@ LibreOffice:
 Ranger:
 - Copiar arquivo de configuração para `~/.config/ranger/` (_default_ `ranger --copy-config=rc`)
 - Para `image_preview`:
-    - Caso esteja usando `kitty`, instale a dependência `python3-pil`
+    - Caso esteja usando `kitty`, instale a dependência `python3-pil` (_?_)
     - Caso esteja usando `terminator`, instale a dependência [`ueberzugpp`](https://software.opensuse.org/download.html?project=home%3Ajustkidding&package=ueberzugpp)
     - Caso esteja usando outro emulador, instale a dependência `w3m-img`
 
