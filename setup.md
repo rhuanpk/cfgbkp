@@ -199,7 +199,7 @@ Ranger:
 - Para `image_preview`:
     - Caso esteja usando `kitty`, instale a dependência `python3-pil`
     - Caso esteja usando `terminator`, instale a dependência [`ueberzugpp`](https://software.opensuse.org/download.html?project=home%3Ajustkidding&package=ueberzugpp)
-    - Caso esteja usando outro emulador de terminal: instale a dependência `w3m-img`
+    - Caso esteja usando outro emulador, instale a dependência `w3m-img`
 
 Git:
 - Copiar arquivo de configuração para `~/`
