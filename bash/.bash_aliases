@@ -31,7 +31,7 @@ alias ggls="git-pretty 'git log --all --oneline' $@"
 alias gglt="git-pretty 'git log --oneline origin/\${GIT_BRANCH:-HEAD}..HEAD' $@"
 
 # Generals
-alias tmp='[ ! -d /tmp/tmp/ ] && mkdir -pv /tmp/tmp/; cd /tmp/tmp/'
+alias tmp='[ ! -d /tmp/ ] && mkdir -pv /tmp/; cd /tmp/'
 
 # Clipboard
 alias cb="wl-copy -n"
