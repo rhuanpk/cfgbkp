@@ -5,8 +5,6 @@ url_setpath='https://raw.githubusercontent.com/rhuanpk/linux/main/scripts/.priva
 path_cfgbkp="${PATH_CFGBKP:-$(curl -fsL "$url_setpath" | bash -s -- -p cfgbkp)}"
 : ${path_cfgbkp:?path cfgbkp must be set}
 
-path_polybar_src="$path_cfgbkp/polybar/config.ini"
-path_polybar_dst="$HOME/.config/polybar"
+path_gitconfig="$path_cfgbkp/git/.gitconfig"
 
-[ ! -d "$path_polybar_dst/" ] && mkdir -pv "$path_polybar_dst/"
-ln -sfv "$path_polybar_src" "$path_polybar_dst/"
+ln -sfv "$path_gitconfig" "$HOME/"

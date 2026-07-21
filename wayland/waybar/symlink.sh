@@ -12,7 +12,7 @@ path_waybar_power_src="$path_cfgbkp/wayland/waybar/custom/power.xml"
 path_waybar_dst="$HOME/.config/waybar"
 path_waybar_mods_dst="$HOME/.config/waybar/custom"
 
-mkdir -pv "$path_waybar_dst/" "$path_waybar_mods_dst"
+mkdir -pv "$path_waybar_dst/" "$path_waybar_mods_dst/"
 ln -sfv "$path_waybar_config_src" "$path_waybar_dst/"
 ln -sfv "$path_waybar_style_src" "$path_waybar_dst/"
 ln -sfv "$path_waybar_power_src" "$path_waybar_mods_dst/"
