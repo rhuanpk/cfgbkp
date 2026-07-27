@@ -7,9 +7,9 @@ if ! grep -qF '. "$HOME/.bash_vars"' ~/.profile; then
 	eof
 fi
 
-if ! grep -qF '. "$PATH_CFGBKP/bash/.bashrc"' ~/.bashrc; then
+if ! grep -qF '. "$PATH_CFGBKP/shell/.bashrc"' ~/.bashrc; then
 	tee -a ~/.bashrc <<- \eof
 
-		[ -r "$PATH_CFGBKP/bash/.bashrc" ] && . "$PATH_CFGBKP/bash/.bashrc"
+		[ -r "$PATH_CFGBKP/shell/.bashrc" ] && . "$PATH_CFGBKP/shell/.bashrc"
 	eof
 fi
