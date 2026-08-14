@@ -29,7 +29,7 @@
 		"custom/power"
 	],
 	"custom/seppipe": {
-		"format": "<span color='#555555'>|</span>",
+		"format": "<span color='#555555'>/</span>",
 		"tooltip": false,
 		"interval": "once"
 	},
