@@ -1,3 +1,6 @@
+[user]
+	name = rhuanpk
+	email = dev@rhuanpk.net
 [includeIf "gitdir:~/Projects/**"]
 	path = ~/Projects/.gitconfig
 [includeIf "gitdir:~/.go/pkg/**"]
