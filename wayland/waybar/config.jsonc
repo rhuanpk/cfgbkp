@@ -100,13 +100,14 @@
 		"format-disconnected": "<span color='#10e3e3'>Network:</span> <span color='#ff0033'>N/A</span>",
 		"format-alt": "<span color='#10e3e3'>󰩠</span> {ifname}: <span color='#ff00ff'>{ipaddr}/{cidr}</span>",
 		"tooltip-format": "Gateway: {gwaddr}",
+		"interval": 5,
 		"on-click-right": "terminator -x nmtui",
 		"on-click-middle": "nm-connection-editor"
 	},
 	"custom/vpn": {
 		"exec": "echo \"$(nmcli -f TYPE conn show --active)\" | grep -qE 'vpn|tun|wireguard' && echo \"(<span color='#ff00ff'>VPN</span>)\"",
 		"tooltip": false,
-		"interval": 30
+		"interval": 5
 	},
 	"cpu": {
 		"states": {
