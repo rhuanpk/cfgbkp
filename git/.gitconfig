@@ -1,3 +1,6 @@
+#[user]
+#	name = rhuanpk
+#	email = dev@rhuanpk.net
 [init]
 	defaultBranch = main
 [credential]
@@ -6,8 +9,5 @@
 	useHttpPath = true
 [include]
 	path = ~/.git/config
-#[user]
-#	name = rhuanpk
-#	email = dev@rhuanpk.net
 #[url "ssh://git@"]
 #	insteadOf = https://
