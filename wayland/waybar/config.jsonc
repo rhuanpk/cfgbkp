@@ -137,7 +137,7 @@
 		"format-bluetooth": "<span color='#10e3e3'>{icon}</span><span color='#ff00ff'>{format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
 		"format-bluetooth-muted": "<span color='#ff00ff'>{format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
 		"format-source": "",
-		"format-source-muted": " ",
+		"format-source-muted": "",
 		"format-icons": {
 			"headphone": "",
 			"headset": "",
