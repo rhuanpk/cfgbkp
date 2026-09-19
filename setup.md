@@ -63,7 +63,7 @@ Segurança:
 - `seahorse`: Chaveiro GUI (_?_)
 
 Trabalho:
-- `kitty`: Emulador de terminal (_also terminator_)
+- `terminator`: Emulador de terminal (_also kitty_)
 - `google-chrome`: Pacote _.deb_
 - `thunar`: Gerenciador de arquivos
 - `zathura`: Visualizador de PDFs
@@ -203,6 +203,9 @@ Ranger:
 
 Git:
 - Copiar arquivo de configuração para `~/`
+
+Terminator:
+- Copiar arquivo de configuração para `~/.config/terminator/config`
 
 Kitty:
 - Copiar arquivo de configuração para `~/.config/kitty/kitty.conf`
