@@ -16,6 +16,7 @@ alias ggd='git --no-pager diff'
 alias ggs='git status'
 alias ggr='git restore ./; git clean -f ./'
 
+alias ggsl="git stash list --pretty=format:'%gd %ci: %s'"
 alias ggbf='cat <(git branch --color=always --all -vv)'
 alias ggsa='git-all "git status"'
 alias ggrf='git restore --staged ./; git restore ./; git clean -f ./'
