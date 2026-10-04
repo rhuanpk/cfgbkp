@@ -78,7 +78,7 @@
 		"interval": 1
 	},
 	"network": {
-		"format-wifi": "<span color='#10e3e3'></span> {essid}",
+		"format-wifi": "<span color='#10e3e3'></span> {essid} <span color='#777777'>{signalStrength}%</span>",
 		"format-ethernet": "<span color='#10e3e3'></span> {ipaddr}",
 		"format-linked": "<span color='#10e3e3'>{ifname}:</span> <span color='#ff0033'>N/IP</span>",
 		"format-disconnected": "<span color='#10e3e3'>Network:</span> <span color='#ff0033'>N/A</span>",
