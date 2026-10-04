@@ -42,9 +42,8 @@ input type:touchpad {
 }
 
 input type:keyboard {
-    xkb_layout "br"
-    xkb_model "pc105"
-    xkb_variant "abnt2"
+    xkb_layout "br,us"
+    xkb_options "grp:shift_caps_toggle"
 }
 
 workspace_layout tabbed

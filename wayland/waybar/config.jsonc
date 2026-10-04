@@ -23,6 +23,7 @@
 		"custom/sepquote",
 		"battery",
 		"tray",
+		"sway/language",
 		"idle_inhibitor",
 		"power-profiles-daemon",
 		"custom/noti",
@@ -54,7 +55,7 @@
 		"tooltip-format": "{app}: {title}"
 	},
 	"clock": {
-		"format": "<span size='9.5pt'>󰀠</span> {:%Hh%M <span color='#777777'>”</span> 󰸗 %d/%m/%Y}",
+		"format": "<span size='9.5pt'></span> {:%Hh%M <span color='#777777'>”</span>  %d/%m/%Y}",
 		"format-alt": "{:%H:%M:<span color='#ff00ff'>%S</span> - %Y/%m/%d}",
 		"tooltip-format": "<tt>{calendar}</tt>",
 		"calendar": {
@@ -76,29 +77,12 @@
 		},
 		"interval": 1
 	},
-	"idle_inhibitor": {
-		"format": "{icon} ",
-		"format-icons": {
-			"activated": "",
-			"deactivated": ""
-		},
-		"tooltip-format-activated": "Coffeine",
-		"tooltip-format-deactivated": "NoCoffeine"
-	},
-	"power-profiles-daemon": {
-		"tooltip-format": "Profile: {profile}\nDriver: {driver}",
-		"format-icons": {
-			"performance": "",
-			"balanced": "󱦒",
-			"power-saver": " "
-		}
-	},
 	"network": {
 		"format-wifi": "<span color='#10e3e3'></span> {essid}",
 		"format-ethernet": "<span color='#10e3e3'></span> {ipaddr}",
 		"format-linked": "<span color='#10e3e3'>{ifname}:</span> <span color='#ff0033'>N/IP</span>",
 		"format-disconnected": "<span color='#10e3e3'>Network:</span> <span color='#ff0033'>N/A</span>",
-		"format-alt": "<span color='#10e3e3'>󰩠</span> {ifname}: <span color='#ff00ff'>{ipaddr}/{cidr}</span>",
+		"format-alt": "<span color='#10e3e3'></span> {ifname}: <span color='#ff00ff'>{ipaddr}/{cidr}</span>",
 		"tooltip-format": "Gateway: {gwaddr}",
 		"interval": 5,
 		"on-click-right": "terminator -x nmtui",
@@ -113,9 +97,9 @@
 		"states": {
 			"critical": 90
 		},
-		"format": "<span color='#10e3e3'></span> {usage}%",
-		"format-alt": "<span color='#10e3e3'></span> {usage}% (<span color='#ff00ff'>{avg_frequency}GHz</span>)",
-		"format-critical": "<span color='#10e3e3'></span> <span color='#ff0033'>{usage}%</span> (<span color='#ff0033'>{avg_frequency}GHz</span>)",
+		"format": "<span color='#10e3e3'></span> {usage}%",
+		"format-alt": "<span color='#10e3e3'></span> {usage}% (<span color='#ff00ff'>{avg_frequency}GHz</span>)",
+		"format-critical": "<span color='#10e3e3'></span> <span color='#ff0033'>{usage}%</span> (<span color='#ff0033'>{avg_frequency}GHz</span>)",
 		"tooltip": false,
 		"interval": 3,
 		"on-click-right": "terminator -x htop"
@@ -141,14 +125,15 @@
 		"format-icons": {
 			"headphone": "",
 			"headset": "",
-			"default": ["","",""]
+			"default": ["","","",""]
 		},
 		"tooltip": false,
-		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-		"on-click-right": "pavucontrol"
+		"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
+		"on-click-middle": "pavucontrol"
 	},
 	"backlight": {
-		"format": "<span color='#10e3e3'>󰖨</span> {percent}%",
+		"format": "<span color='#10e3e3'></span> {percent}%",
 		"tooltip": false
 	},
 	"battery": {
@@ -159,7 +144,7 @@
 		"format-full": "<span color='#10e3e3'>󰂄</span>{capacity}%",
 		"format-charging": "<span color='#10e3e3'>{icon}</span>{capacity}%",
 		"format-critical": "<span color='#ff0033'>{icon}</span>{capacity}%",
-		"format-plugged": "{capacity}%",
+		"format-plugged": "󰚥{capacity}%",
 		"format-time": "{H}h{M}m",
 		"format-icons": {
 			"default": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
@@ -169,6 +154,28 @@
 	"tray": {
 		"spacing": 4,
 		"show-passive-items": true
+	},
+	"sway/language": {
+		"format": " ",
+		"tooltip-format": "{long}",
+		"on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+	},
+	"idle_inhibitor": {
+		"format": "{icon} ",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		},
+		"tooltip-format-activated": "Coffeine",
+		"tooltip-format-deactivated": "NoCoffeine"
+	},
+	"power-profiles-daemon": {
+		"tooltip-format": "Profile: {profile}\nDriver: {driver}",
+		"format-icons": {
+			"performance": "",
+			"balanced": "󱦒",
+			"power-saver": " "
+		}
 	},
 	"custom/noti": {
 		"tooltip": true,
