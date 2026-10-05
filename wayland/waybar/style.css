@@ -8,7 +8,7 @@ tooltip {
 
 #waybar {
 	background-color: black;
-	font-family: 'Hack Nerd Font Mono', monospace;
+	font-family: 'Symbols Nerd Font Mono', 'Hack Nerd Font Mono', monospace;
 	font-size: 9pt;
 }
 
