@@ -240,7 +240,7 @@ IntelliJ:
 Google-chrome:
 - Utilize o `cog` como intermediário somente para fazer o _download_ do Chrome
 - Caso precise, configure os _emojis_:
-    `[sudo] apt-get install fonts-noto-color-emoji; fc-cache -fv`
+    `[sudo] apt install fonts-noto-color-emoji && fc-cache -fv`
 
 Thunar:
 1. Copiar arquivo de configuração para `~/.config/Thunar/`
