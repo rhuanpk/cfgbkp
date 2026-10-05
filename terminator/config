@@ -1,11 +1,13 @@
 [global_config]
+  inactive_color_offset = 0.75
 [keybindings]
 [profiles]
   [[default]]
-    font = Hack Nerd Font 9
+    font = Hack Nerd Font Mono 9
     foreground_color = "#ffffff"
     show_titlebar = False
     scrollbar_position = hidden
+    scrollback_lines = 2500
     palette = "#000000:#cd0000:#00cd00:#cdcd00:#0000ee:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
     use_system_font = False
     bold_is_bright = True
