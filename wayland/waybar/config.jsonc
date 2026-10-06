@@ -116,10 +116,10 @@
 		"on-click-right": "terminator -x htop"
 	},
 	"pulseaudio": {
-		"format": "<span color='#10e3e3'>{icon}</span> <span color='#ff00ff'>{format_source}</span> {volume}%",
-		"format-muted": "<span color='#ff00ff'> {format_source}</span> {volume}%",
-		"format-bluetooth": "<span color='#10e3e3'>{icon}</span> <span color='#ff00ff'>{format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
-		"format-bluetooth-muted": "<span color='#ff00ff'> {format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
+		"format": "<span color='#10e3e3'>{icon}</span><span color='#ff00ff'>{format_source}</span> {volume}%",
+		"format-muted": "<span color='#ff00ff'>{format_source}</span> {volume}%",
+		"format-bluetooth": "<span color='#10e3e3'>{icon}</span><span color='#ff00ff'>{format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
+		"format-bluetooth-muted": "<span color='#ff00ff'>{format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
 		"format-source": "",
 		"format-source-muted": "",
 		"format-icons": {
