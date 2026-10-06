@@ -55,7 +55,7 @@
 		"tooltip-format": "{app}: {title}"
 	},
 	"clock": {
-		"format": "<span size='9.5pt'></span> {:%Hh%M <span color='#777777'>”</span>  %d/%m/%Y}",
+		"format": " {:%Hh%M <span color='#777777'>”</span>  %d/%m/%Y}",
 		"format-alt": "{:%H:%M:<span color='#ff00ff'>%S</span> - %Y/%m/%d}",
 		"tooltip-format": "<tt>{calendar}</tt>",
 		"calendar": {
@@ -116,12 +116,12 @@
 		"on-click-right": "terminator -x htop"
 	},
 	"pulseaudio": {
-		"format": "<span color='#10e3e3'>{icon}</span><span color='#ff00ff'>{format_source}</span> {volume}%",
-		"format-muted": "<span color='#ff00ff'>{format_source}</span> {volume}%",
-		"format-bluetooth": "<span color='#10e3e3'>{icon}</span><span color='#ff00ff'>{format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
-		"format-bluetooth-muted": "<span color='#ff00ff'>{format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
+		"format": "<span color='#10e3e3'>{icon}</span> <span color='#ff00ff'>{format_source}</span> {volume}%",
+		"format-muted": "<span color='#ff00ff'> {format_source}</span> {volume}%",
+		"format-bluetooth": "<span color='#10e3e3'>{icon}</span> <span color='#ff00ff'>{format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
+		"format-bluetooth-muted": "<span color='#ff00ff'> {format_source}</span> {volume}% (<span color='#ff00ff'></span>)",
 		"format-source": "",
-		"format-source-muted": " ",
+		"format-source-muted": "",
 		"format-icons": {
 			"headphone": "",
 			"headset": "",
@@ -140,10 +140,10 @@
 		"states": {
 			"critical": 15
 		},
-		"format": "<span color='#ff00ff'>{icon} </span>{capacity}%",
-		"format-full": "<span color='#10e3e3'>󰂄 </span>{capacity}%",
-		"format-charging": "<span color='#10e3e3'>{icon} </span>{capacity}%",
-		"format-critical": "<span color='#ff0033'>{icon} </span>{capacity}%",
+		"format": "<span color='#ff00ff'>{icon}</span> {capacity}%",
+		"format-full": "<span color='#10e3e3'>󰂄</span> {capacity}%",
+		"format-charging": "<span color='#10e3e3'>{icon}</span> {capacity}%",
+		"format-critical": "<span color='#ff0033'>{icon}</span> {capacity}%",
 		"format-plugged": "󰚥 {capacity}%",
 		"format-time": "{H}h{M}m",
 		"format-icons": {
@@ -156,12 +156,12 @@
 		"show-passive-items": true
 	},
 	"sway/language": {
-		"format": " ",
+		"format": "",
 		"tooltip-format": "{long}",
 		"on-click": "swaymsg input type:keyboard xkb_switch_layout next"
 	},
 	"idle_inhibitor": {
-		"format": "{icon} ",
+		"format": "{icon}",
 		"format-icons": {
 			"activated": "",
 			"deactivated": ""
@@ -174,7 +174,7 @@
 		"format-icons": {
 			"performance": "",
 			"balanced": "󱦒",
-			"power-saver": " "
+			"power-saver": ""
 		}
 	},
 	"custom/noti": {
