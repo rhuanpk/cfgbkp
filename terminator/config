@@ -3,7 +3,7 @@
 [keybindings]
 [profiles]
   [[default]]
-    font = Noto Sans Mono 9
+    font = DejaVu Sans Mono 9
     foreground_color = "#ffffff"
     show_titlebar = False
     scrollbar_position = hidden
