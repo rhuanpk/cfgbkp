@@ -312,6 +312,7 @@ Fonte:
     - _Dock_
     - GTK
     - QT
+    - Compositor
 
 Variáveis:
 1. Definir variáveis de ambiente:

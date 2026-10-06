@@ -11,7 +11,7 @@ set $menu wmenu-run
 
 set $cursorCmd gsettings set org.gnome.desktop.interface
 set $cursorName default
-set $cursorSize 12
+set $cursorSize 8
 
 include /etc/sway/config-vars.d/*
 
@@ -25,7 +25,7 @@ exec swayidle -w \
 
 exec kanshi
 
-font Hack Nerd Font 8
+font DejaVu Sans 8
 
 seat seat0 xcursor_theme $cursorName $cursorSize
 exec_always $cursorCmd cursor-theme $cursorName
