@@ -22,7 +22,7 @@ Instalar um Debian mínimo (com no máximo os utilitários padrões) e particion
 ### APT
 
 Configurar `apt` para usar o repositórios do _testing_:
-1. Remova os repositórios de código-fonte
+1. Remova os repositórios de códigos-fonte
 1. Remova os `*-backports`
 1. Remova os `*-updates`
 1. Troque todos os "`stable`" por "`testing`"
@@ -32,7 +32,7 @@ Configurar `apt` para usar o repositórios do _testing_:
 ### Flatpak
 
 Configurar `flatpak` no sistema:
-1. `sudo apt install flatpak`
+1. `[sudo] apt install flatpak`
 1. `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 1. `flatpak install flathub io.github.flattool.Warehouse`
 1. `flatpak install flathub com.github.tchx84.Flatseal`
@@ -239,8 +239,6 @@ IntelliJ:
 
 Google-chrome:
 - Utilize o `cog` como intermediário somente para fazer o _download_ do Chrome
-- Caso precise, configure os _emojis_:
-    `[sudo] apt install fonts-noto-color-emoji && fc-cache -fv`
 
 Thunar:
 1. Copiar arquivo de configuração para `~/.config/Thunar/`
@@ -289,29 +287,37 @@ Tema:
         cat <<- eof | tee "$folder/settings.ini"
             [Settings]
             gtk-application-prefer-dark-theme = 1
-            gtk-font-name = Sans 10
+            gtk-font-name = DejaVu Sans 9
         eof
     done
     ```
 1. Definir tema para Qt:
     1. Executar `qt5ct` e `qt6ct`
     1. Alterar diretamente nos arquivos de configuração (`~/.config/qt[56]ct/qt[56]ct.conf`):
-        - Nome da fonte para **Sans**
-        - Tamanho da fonte para **10**
-1. Instalar Hack Nerd Font:
-    1. Copiar font baixada, [baixar mais atual do site](<https://www.nerdfonts.com/font-downloads#hack:~:text=at%20common%20sizes-,Download,-Preview>) ou a [última versão fixa](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip) (que eu registrei)
-    1. Descompactar o arquivo (se estiver comprimido)
-    1. Criar a estrutura de pasta (se não existir):
-        `mkdir -pv ~/.local/share/fonts/{true,open}type/`
-    1. Copiar os arquivos de fontes desejados
+        - Nome da fonte para **DejaVu Sans**
+        - Tamanho da fonte para **9**
+
+Fonte:
+1. Instale a fonte de símbolos em `~/.local/share/fonts/truetype/`
+    - [Symbols Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/NerdFontsSymbolsOnly.zip)
+2. Instale os pacotes de fontes e emoji
+    - `[sudo] apt install fonts-dejavu-core fonts-noto-core fonts-noto-color-emoji`
+    - Caso deseje instalar o pacote com todas as variações de fontes, troque pelos _meta-packages_ `fonts-dejavu` e `fonts-noto`
+3. Configure o `fontconfig`
+    - `[sudo] apt install fontconfig`
+    - Copie o arquivo de configuração para `~/.config/fontconfig/`
+    - Atualize o _cache_ de fontes: `fc-cache -rfv`
+4. Configure a fonte nas aplicações
+    - Terminal
+    - _Dock_
+    - GTK
+    - QT
 
 Variáveis:
 1. Definir variáveis de ambiente:
     ```sh
     cat <<- eof | [sudo] tee -a /etc/environment
         EDITOR=vim
-        XDG_SESSION_TYPE=wayland
-        XDG_CURRENT_DESKTOP=sway
         GDK_BACKEND=wayland
         GDK_DARK_MODE=1
         QT_QPA_PLATFORM=wayland
