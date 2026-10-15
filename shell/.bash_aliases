@@ -10,6 +10,7 @@ alias jq='jq -C'
 alias ll='ls -lhF --time-style=+%%'
 alias lla='ls -lhAF --time-style=+%%'
 alias llt='ls -lhtF'
+alias lls='ls -lhAF'
 
 # Git
 alias ggd='git --no-pager diff'
