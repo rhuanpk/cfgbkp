@@ -9,7 +9,7 @@ alias jq='jq -C'
 
 alias ll='ls -lhF --time-style=+%%'
 alias lla='ls -lhAF --time-style=+%%'
-alias llt='ls -lhtF'
+alias llt='ls -lhAFt'
 alias lls='ls -lhAF'
 
 # Git
