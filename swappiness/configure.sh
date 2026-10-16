@@ -7,9 +7,12 @@ while getopts 'r' option; do
 done
 shift $((OPTIND-1))
 
-$sudo mkdir -pv /etc/sysctl.d/
+[ "$sudo" ] && sudo -v
 
-$sudo tee -a /etc/sysctl.d/99-sysctl.conf <<- eof
+read -p "$0: vfs_cache_pressure: " pressure
+
+$sudo mkdir -pv /etc/sysctl.d/
+$sudo tee /etc/sysctl.d/99-sysctl.conf <<- eof
 	vm.swappiness=10
-	vm.vfs_cache_pressure=75
+	vm.vfs_cache_pressure=$pressure
 eof
