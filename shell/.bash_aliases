@@ -42,7 +42,7 @@ alias cbf='wl-copy'
 # Tools
 alias rms='read -p shred?; shred -zuvn 10'
 alias pwgn='pwgen -scny 24 1'
-alias rmll='rm -rv .[^.]* *'
+alias rmll='rm -rv {.,}*'
 alias hsgp="history | sed -E 's/[[:blank:]]+[[:digit:]]+[[:blank:]]+//' | grep -iE"
 
 # Network
