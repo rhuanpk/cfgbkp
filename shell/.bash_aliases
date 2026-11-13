@@ -46,9 +46,9 @@ alias rmll='rm -irv {.,}*'
 alias hsgp="history | sed -E 's/[[:blank:]]+[[:digit:]]+[[:blank:]]+//' | grep -iE"
 
 # Network
-alias ips='ip -br -c address'
 alias opened-doors='lsof -nPi | grep -F LISTEN'
-alias external-ip="curl -fsSL ipecho.net/plain | sed 's/$/\n/' #ipinfo.io"
+alias ips='ip -br -c address'
+alias external-ip="curl ifconfig.io; curl ipinfo.io; echo; curl ipecho.net/plain; echo"
 
 # Disk
 alias lsblkf='lsblk --output=MODEL,STATE,TYPE,PATH,FSTYPE,LABEL,UUID'
