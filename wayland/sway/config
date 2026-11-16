@@ -44,6 +44,9 @@ input type:keyboard {
     xkb_options "grp:shift_caps_toggle"
 }
 
+exec swayrd
+bindsym $modAlt+Tab exec swayr switch-window
+
 workspace_layout          tabbed
 for_window [all] floating enable
 floating_modifier $modAlt normal
@@ -148,9 +151,6 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
 client.background       #ffffff
 
 titlebar_padding 1
-
-bindsym $modAlt+Shift+Tab focus prev
-bindsym $modAlt+Tab       focus next
 
 bindsym $mod+Control+s exec systemctl suspend
 bindsym $mod+Control+b exec swaylock -flc 00000000
