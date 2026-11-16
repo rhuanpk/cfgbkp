@@ -50,6 +50,7 @@ Interface:
 - `swaybg`: Gerenciador de papel de parede (_?_)
 - `sway-notification-center`: Gerenciador de notificações
 - `waybar`: Barra de status
+- `wofi`: Menu de aplicações
 
 Rede:
 - `ssh`: Utilitário de conexão remota
@@ -184,6 +185,9 @@ Swaync:
 Waybar:
 - Copiar arquivos de configuração para `~/.config/waybar/` (_default_ `/etc/xdg/waybar/*`)
 - Copiar arquivo de módulo de para `~/.config/waybar/custom/` (_default_ `/usr/share/waybar/custom_modules/power_menu.xml`)
+
+Wofi:
+- Copiar arquivo de configuração para `~/.config/wofi/`
 
 XDG:
 - Executar `xdg-user-dirs-update`

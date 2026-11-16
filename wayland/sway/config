@@ -7,7 +7,7 @@ set $up k
 set $right l
 
 set $term terminator --working-directory /tmp
-set $menu wmenu-run
+set $menu wofi -S drun -O alphabetical -I -i
 
 set $cursorCmd gsettings set org.gnome.desktop.interface
 set $cursorName default
@@ -52,6 +52,7 @@ floating_modifier $modAlt normal
 
 bindsym $mod+Return exec $term
 bindsym $mod+q kill
+bindsym $mod+Shift+d exec wmenu-run
 bindsym $mod+d exec $menu
 
 bindsym $mod+Shift+c reload
@@ -119,6 +120,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+a focus child
 bindsym $mod+a focus parent
 
 bindsym $mod+Shift+minus move scratchpad
