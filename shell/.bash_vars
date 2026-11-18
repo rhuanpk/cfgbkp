@@ -1,2 +1,3 @@
 [ -d "$HOME/.local/bin/me" ] && PATH="$HOME/.local/bin/me:$PATH"
+[ -d "$HOME/.cargo/bin" ] && PATH="$PATH:$HOME/.cargo/bin"
 [ -d "$HOME/.go/bin" ] && PATH="$PATH:$HOME/.go/bin"
