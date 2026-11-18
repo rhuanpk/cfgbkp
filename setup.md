@@ -175,6 +175,11 @@ LibreOffice:
 Greetd:
 - Substituir no `/etc/greetd/config.toml`:
     `command = "tuigreet --power-shutdown 'systemctl poweroff' --power-reboot 'systemctl reboot' --cmd sway"`
+- Adicionar no final de `/etc/pam.d/greetd`:
+    ```
+    session required pam_env.so readenv=1
+    session required pam_env.so readenv=1 envfile=/etc/default/locale
+    ```
 
 Sway:
 - Copiar arquivo de configuração para `~/.config/sway/` (_default_ `/etc/sway/config`)

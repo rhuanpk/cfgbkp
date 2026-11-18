@@ -1,0 +1,2 @@
+session required pam_env.so readenv=1
+session required pam_env.so readenv=1 envfile=/etc/default/locale
